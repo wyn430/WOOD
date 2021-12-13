@@ -41,7 +41,7 @@ CUDA_VISIBLE_DEVICES = ID  python main_OOD_dynamic.py [beta value] [number of ep
 e.g. CUDA_VISIBLE_DEVICES=0 python main_OOD_binary.py 0.1 60 60 50 Cifar10 Imagenet_c 3
      CUDA_VISIBLE_DEVICES=0 python main_OOD_dynamic.py 0.1 60 60 50 Cifar10 Imagenet_c 3
 ```
-Note that the difference between [main_OOD_binary.py](https://github.com/wyn430/WOOD/blob/master/main_OOD_binary.py) and [main_OOD_dynamic.py](https://github.com/wyn430/WOOD/blob/master/main_OOD_dynamic.py) is the distance matrix used in the Wasserstein distance, which is discussed in our paper. The trained model is saved in [director](https://github.com/wyn430/WOOD/tree/master/runs). The model performance will be routinely tested during training.
+Note that the difference between [main_OOD_binary.py](https://github.com/wyn430/WOOD/blob/master/main_OOD_binary.py) and [main_OOD_dynamic.py](https://github.com/wyn430/WOOD/blob/master/main_OOD_dynamic.py) is the distance matrix used in the Wasserstein distance, which is discussed in our paper. The trained model is saved in [directory](https://github.com/wyn430/WOOD/tree/master/runs). The model performance will be routinely tested during training.
 
 ### Baseline Methods
 The implementation of baseline methods is mainly based on the [repo](https://github.com/megvii-research/FSSD_OoD_Detection).
@@ -53,6 +53,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](https://gi
 ## Acknowledgments
 
 The implementation of DenseNet is base on the [repo](https://github.com/andreasveit/densenet-pytorch).
+
 The implementation of Wasserstein distance is mainly base on [geomloss](https://www.kernel-operations.io/geomloss/).
 
 
