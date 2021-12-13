@@ -1,0 +1,1 @@
+The MNIST, FashionMNIST, Cifar10, and SVHN can be automatically downloaded to their corresponding folders. The Tiny-ImageNet-200 needs to be manually downloaded and put into the folder.
