@@ -1,5 +1,5 @@
 # WOOD
-Implementation of our recent paper, [WOOD: Wasserstein-based Out-of-Distribution Detection]
+Implementation of our recent paper, [WOOD: Wasserstein-based Out-of-Distribution Detection](http://arxiv.org/abs/2112.06384).
 
 ## Abstract
 The training and test data for deep-neural-network-based classifiers are usually assumed to be sampled from the same distribution. When part of the test samples are drawn from a distribution that is sufficiently far away from that of the training samples (a.k.a. out-of-distribution (OOD) samples), the trained neural network has a tendency to make high confidence predictions for these OOD samples. Detection of the OOD samples is critical when training a neural network used for image classification, object detection, etc. It can enhance the classifier's robustness to irrelevant inputs, and improve the system resilience and security under different forms of attacks. Detection of OOD samples has three main challenges: (i) the proposed OOD detection method should be compatible with various architectures of classifiers (e.g., DenseNet, ResNet), without significantly increasing the model complexity and requirements on computational resources; (ii) the OOD samples may come from multiple distributions, whose class labels are commonly unavailable; (iii) a score function needs to be defined to effectively separate OOD samples from in-distribution (InD) samples. To overcome these challenges, we propose a Wasserstein-based out-of-distribution detection (WOOD) method. The basic idea is to define a Wasserstein-distance-based score that evaluates the dissimilarity between a test sample and the distribution of InD samples. An optimization problem is then formulated and solved based on the proposed score function. The statistical learning bound of the proposed method is investigated to guarantee that the loss value achieved by the empirical optimizer approximates the global optimum. The comparison study results demonstrate that the proposed WOOD consistently outperforms other existing OOD detection methods.
@@ -9,7 +9,14 @@ The training and test data for deep-neural-network-based classifiers are usually
 If you find our work useful in your research, please consider citing:
 
 ```
-To do
+@misc{wang2021wood,
+      title={WOOD: Wasserstein-based Out-of-Distribution Detection}, 
+      author={Yinan Wang and Wenbo Sun and Jionghua "Judy" Jin and Zhenyu "James" Kong and Xiaowei Yue},
+      year={2021},
+      eprint={2112.06384},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
 ```
 
 ## Installation
